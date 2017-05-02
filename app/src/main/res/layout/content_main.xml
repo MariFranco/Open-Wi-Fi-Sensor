@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.asus.myapplication.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:text="SALIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_Exit"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:fontFamily="casual"
+        android:backgroundTintMode="src_over"
+        android:layout_alignBaseline="@+id/button_Start"
+        android:layout_alignBottom="@+id/button_Start"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp" />
+
+    <Button
+        android:text="Comenzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_Start"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="casual"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:elevation="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_Descripcion"
+        android:text="Encuentra los puntos de wi fi libres en tu ciudad. Te notificaremos cada que te encuentres 100 metros cerca uno de estos puntos de acceso"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:layout_weight="0.22"
+        android:textAlignment="gravity"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/foto"
+        android:id="@+id/imageView2"
+        android:scaleX="0.65"
+        android:scaleY="0.65"
+        android:layout_alignTop="@+id/textView_Descripcion"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:text="OPEN WI-FI SENSOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:fontFamily="casual"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
